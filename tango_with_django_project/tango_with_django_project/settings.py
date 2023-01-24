@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -55,8 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/Users/danielshields/Documents/University/Year 2/WAD2/wad2-rango-ae/tango_with_django_project/tango_with_django_project/templates',
-            '/home/wad2-rango-ae/tango_with_django_project/tango_with_django_project/templates'
+            TEMPLATE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
