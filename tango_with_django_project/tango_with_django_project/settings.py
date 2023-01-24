@@ -25,7 +25,7 @@ SECRET_KEY = 'v1h4_*%@14x3jvq3kw$=rrb*7csydy06h=6ka_=0+m1+)_364s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "rango.dukedan.uk", "www.rango.dukedan.uk"]
 
 
 # Application definition
