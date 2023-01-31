@@ -7,6 +7,8 @@ class Category(models.Model):
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
     slug = models.SlugField(unique=True)
+    NAME_MAX_LENGTH = 128
+
 
     def __str__(self): return self.name
     class Meta: verbose_name_plural = 'Categories'
@@ -21,4 +23,7 @@ class Page(models.Model):
     title = models.CharField(max_length=128)
     url = models.URLField()
     views = models.IntegerField(default=0)
+    URL_MAX_LENGTH = 200
+    TITLE_MAX_LENGTH = 128
+
     def __str__(self): return self.title
